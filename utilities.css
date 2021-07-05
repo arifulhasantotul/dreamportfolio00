@@ -4,12 +4,15 @@
 .vert_center {
     align-items: center;
 }
+.justify_center{
+    justify-content: center;
+}
 .justify_between {
     justify-content: space-between;
 }
 .btn button{
     padding: 0.8rem 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border: 2px solid transparent;
     border-radius: 2px;
@@ -25,5 +28,17 @@
     background: transparent;
     border: 2px solid var(--primary);
     color: var(--primary);
-
 }
+.btn_secondary button {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn_secondary button:hover {
+    background: var(--primary);
+    color: var(--secondary);
+}
+.flex1{
+    flex: 1;
+}
+

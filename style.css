@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import 'utilities.css';
 :root {
@@ -14,9 +15,13 @@
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+html{
+    font-size: 62.5%;
+}
 header {
     background: var(--dark);
     height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%);
 }
 .container {
     max-width: 1152px;
@@ -31,12 +36,95 @@ header nav .branding {
     margin-right: 3rem;
 }
 .container .left a {
+    font-size: 1.3rem;
     color: var(--pure);
     text-decoration: none;
-    margin-right: 2rem;
+    margin-right: 3rem;
     text-transform: uppercase;
     transition: all .3s ease;
 }
 .container .left a:hover {
     color: var(--primary)
+}
+/* NAVBAR DONE */
+.hero .hleft img {
+    width: 400px;
+    margin-left: 2rem;
+}
+.hero .hright {
+    color: var(--pure);
+    margin-top: -29rem;
+    padding: 11rem;
+    font-size: 1.3rem;
+}
+.hero .hright h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .hright h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .hright h1 span {
+    color: var(--primary);
+}
+.hero .hright p{
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+/* header done */
+
+section {
+    padding: 6rem 0;
+}
+section .about_img {
+    height: 300px;
+    margin-left: 90%;
+}
+.about .go_left{
+    margin-left: 30%;
+}
+.about h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.about h1 span {
+    color: var(--primary);
+}
+.about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+    font-size: 1.3rem;
+}
+.about .social {
+    display: flex;
+    padding: 2rem;
+    margin-left: -2rem;
+}
+.about .social a {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin-right:1rem;
+    border-radius: 50%;
+    background: var(--dark);
+    transition: all 0.5s ease0;
+}
+.about .social a:hover {
+    background: var(--primary);
+}
+.about .social a img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
 }
