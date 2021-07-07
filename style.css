@@ -130,6 +130,7 @@ section .about_img {
     margin: 0.5rem;
 }
 /* About Me done*/
+
 section.services{
     background: var(--light);
 }
@@ -145,7 +146,7 @@ section.services{
 .section_heading + p{
     color: var(--ternary);
     font-family:'Lato', sans-serif;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 section.services .container .card_wrapper {
@@ -153,6 +154,7 @@ section.services .container .card_wrapper {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+    margin-top: 10rem;
 }
 section.services .container .card_wrapper .card{
     background: var(--pure);
@@ -208,6 +210,7 @@ section.freelancer {
 }
 
 /* freelancer done */
+
 .slider .slide {
     text-align: center;
     padding: 0 2.5%;
@@ -251,3 +254,55 @@ section.freelancer {
 }
 
 /* reviews done */
+
+section .container{
+    text-align: center;
+}
+section .container p{
+    color: var(--ternary);
+    margin: 1rem 0 2rem 0;
+}
+section .work{
+    background: var(--light);
+}
+.work .card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin: 10rem;
+    margin-top: 4rem;
+}
+.work .card_wrapper .card {
+    position: relative;
+    height:20rem;
+    width: 30rem;
+    
+}
+.work .card_wrapper .card .overlay{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(61, 207, 211, 0.8);
+    color: var(--pure);
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.work .card_wrapper .card:hover .overlay{
+    opacity: 1;
+}
+.work .card_wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+    
+}
+.work .card_wrapper .card img{
+    width: 100%;
+    height: 100%;
+}
