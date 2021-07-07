@@ -18,10 +18,11 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 header {
     background: var(--dark);
-    height: 800px;
+    height: 75rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%);
 }
 .container {
@@ -226,9 +227,9 @@ section.freelancer {
     color: var(--ternary);
     margin-bottom: 1rem;
     font-family: 'Lato', sans-serif;
-}
+} 
 .slider .slide span{
-    font-size: 0.8rem;
+    font-size: 0.8rem; 
 }
 .reviews .slider_dots{
     margin-top: 1rem;
@@ -306,3 +307,64 @@ section .work{
     width: 100%;
     height: 100%;
 }
+
+/* work done */
+
+section.blog {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 82%, 0 100%);
+    padding-bottom: 24rem;
+}
+section.blog h1 {
+    color: var(--pure)
+}
+section.blog span{
+    color: var(--primary);
+}
+.blog .card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 8rem;
+}
+.blog .card_wrapper .card {
+    margin: 0 2rem;
+    background: var(--pure);
+}
+.blog .card_wrapper .card img{
+    width: 28.5rem;
+    height: 20rem;
+    object-fit: cover;
+}
+.blog .card_wrapper .card .card_content{
+    width: 23rem;
+    margin: 2rem 0 2rem 3rem;
+}
+.blog .card .card_content a{
+    text-decoration: none;
+    margin-left: -17.5rem;
+    color: var(--secondary);
+}
+.blog .card .card_content a:hover {
+    color: var(--primary);
+}
+.blog .card .card_content h1:hover {
+    color: var(--primary);
+}
+.blog .card .card_content h1{
+    color: var(--secondary);
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.blog .card .card_content span{
+    color: var(--ternary);
+    margin-left: -17rem;
+}
+.blog .card .card_content p {
+    text-align: justify;
+    margin-bottom: 0.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* blog done */
