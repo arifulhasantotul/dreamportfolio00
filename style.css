@@ -329,6 +329,7 @@ section.blog span{
 .blog .card_wrapper .card {
     margin: 0 2rem;
     background: var(--pure);
+    box-shadow: -1px 3px 21px 3px var(--secondary);
 }
 .blog .card_wrapper .card img{
     width: 28.5rem;
@@ -368,3 +369,30 @@ section.blog span{
 }
 
 /* blog done */
+
+section.contact .container p{
+    margin: 2rem 0 4rem 0;
+}
+section.contact .card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 18rem;
+}
+section.contact .card_wrapper .card{
+    text-align: center;
+}
+section.contact .card_wrapper .card img{
+    margin-bottom: 1.5rem;
+    width: 7rem;
+}
+section.contact .card_wrapper .card h1{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+section.contact .card_wrapper .card h6{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ternary);
+}
+section.contact .card_wrapper .card{}
+section.contact .card_wrapper .card{}
