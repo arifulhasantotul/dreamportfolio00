@@ -393,6 +393,54 @@ section.contact .card_wrapper .card h6{
     font-size: 1rem;
     font-weight: 500;
     color: var(--ternary);
+    margin-bottom: 4rem;
 }
-section.contact .card_wrapper .card{}
-section.contact .card_wrapper .card{}
+section.contact form{
+    margin: 0 26rem;
+}
+section.contact .input_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+section.contact .input_wrapper2{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+section.contact input:focus, section.contact textarea:focus {
+    outline: none;
+}
+
+section.contact input, section.contact textarea {
+    padding: 0.5rem;
+    border: 0.1rem solid var(--pure);
+    font-size: 1rem;
+}
+section.contact button{
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    margin-top: ;
+}
+
+/* contact done */
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer_logo{
+    margin-bottom: 1rem;
+}
+footer .footer_socials{
+    margin-bottom: 1rem;
+}
+footer .footer_socials a img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+footer .footer_copyright {
+    color: var(--ternary);
+}
